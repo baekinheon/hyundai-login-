@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>현대자동차 로그인</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f6f8; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .login-container { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: 300px; text-align: center; }
+        .logo { width: 150px; margin-bottom: 30px; }
+        input[type="text"], input[type="password"] { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+        button { background-color: #003478; color: white; padding: 10px; width: 100%; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #002c65; }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="hyundai_logo.png" alt="현대자동차 로고" class="logo">
+        <form action="dashboard.html">
+            <input type="text" placeholder="아이디" required><br>
+            <input type="password" placeholder="비밀번호" required><br>
+            <button type="submit">로그인</button>
+        </form>
+    </div>
+</body>
+</html>
