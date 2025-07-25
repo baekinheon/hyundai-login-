@@ -1,87 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>재직증명서</title>
-<style>
-  body {
-    font-family: 'Noto Sans KR', sans-serif;
-    margin: 20px;
-    padding: 10px;
-    background: #fff;
-  }
-  .container {
-    max-width: 600px;
-    margin: auto;
-    border: 1px solid #ccc;
-    padding: 20px;
-  }
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 10px;
-    margin-bottom: 20px;
-  }
-  img.logo {
-    display: block;
-    margin: 0 auto 20px auto;
-    max-width: 180px;
-    height: auto;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 15px;
-    margin-bottom: 30px;
-  }
-  th, td {
-    border: 1px solid #888;
-    padding: 10px;
-  }
-  th {
-    background-color: #f7f7f7;
-    text-align: left;
-    width: 110px;
-  }
-  .footer {
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-  }
-  .footer .ceo {
-    margin-top: 10px;
-    font-size: 15px;
-  }
-  img.seal {
-    width: 60px;
-    margin-left: 15px;
-    vertical-align: middle;
-  }
-</style>
+    <meta charset="UTF-8">
+    <title>현대자동차 로그인</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f6f8; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .login-container { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: 300px; text-align: center; }
+        .logo { width: 150px; margin-bottom: 30px; }
+        input[type="text"], input[type="password"] { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+        button { background-color: #003478; color: white; padding: 10px; width: 100%; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #002c65; }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <img src="hyundai_logo.png" alt="현대자동차 로고" class="logo" />
-    <div class="title">재&nbsp;&nbsp;직&nbsp;&nbsp;증&nbsp;&nbsp;명&nbsp;&nbsp;서</div>
-    <table>
-      <tr><th>성명</th><td>백인헌</td></tr>
-      <tr><th>생년월일</th><td>1996년 06월 15일</td></tr>
-      <tr><th>소속</th><td>연구개발본부</td></tr>
-      <tr><th>직위</th><td>연구원</td></tr>
-      <tr><th>직무</th><td>차체 구조 설계</td></tr>
-      <tr><th>재직상태</th><td>재직</td></tr>
-      <tr><th>입사일</th><td>2023년 09월 04일</td></tr>
-      <tr><th>재직기간</th><td>2023년 09월 04일 ~ 현재 (1년 11개월)</td></tr>
-    </table>
-    <div class="footer">
-      현&nbsp;&nbsp;대&nbsp;&nbsp;자&nbsp;&nbsp;동&nbsp;&nbsp;차&nbsp;&nbsp;주&nbsp;&nbsp;식&nbsp;&nbsp;회&nbsp;&nbsp;사
-      <div class="ceo">대표이사&nbsp;&nbsp;&nbsp;&nbsp;장&nbsp;&nbsp;&nbsp;&nbsp;재&nbsp;&nbsp;&nbsp;&nbsp;훈
-        <img src="seal.png" alt="직인" class="seal" />
-      </div>
+    <div class="login-container">
+        <img src="hyundai_logo.png" alt="현대자동차 로고" class="logo">
+        <form action="dashboard.html">
+            <input type="text" placeholder="아이디" required><br>
+            <input type="password" placeholder="비밀번호" required><br>
+            <button type="submit">로그인</button>
+        </form>
     </div>
-  </div>
 </body>
 </html>
